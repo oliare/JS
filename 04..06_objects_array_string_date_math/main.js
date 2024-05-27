@@ -78,23 +78,60 @@ let time = {
     hour: 0,
     min: 0,
     sec: 0,
-    convertMin: function() {
-        this.min = this.min >= 60 ? (this.hour++, 0) : this.min;
+    
+    print(){
+        alert(this.toString());
     },
-    convertSec: function() {
-        this.sec = this.sec >= 60 ? (this.min++, 0) : this.sec;
+
+    addSec(sec) {
+        this.sec += sec;
+        this.validateTime();
     },
-    formatting: function(value) {
+    
+    addMin(min) {
+        this.min += min;
+        this.validateTime();
+    },
+    
+    addHour(h) {
+        this.hour += h;
+        this.validateTime();
+    },
+    
+    formatting(value) {
         return value < 10 ? '0' + value : value;
     },
-    toString: function() {
-        return `${this.formatting(this.hour)}:${this.formatting(this.min)}:${this.formatting(this.sec)}`;
-    }
+
+    validateTime() {
+        while (this.sec >= 60) {
+            this.sec -= 60;
+            this.min += 1;
+        }
+        while (this.min >= 60) {
+            this.min -= 60;
+            this.hour += 1;
+        }
+        while (this.hour >= 24) {
+            this.hour -= 24;
+        }
+    },
+        
+    toString() {
+        return this.formatting(this.hour) + ":" + this.formatting(this.min) + ":" + this.formatting(this.sec);
+    },
+
 };
 
 time.hour = +prompt('Hours:');
 time.min = +prompt('Minutes:');
 time.sec = +prompt('Seconds:');
-time.convertMin();
-time.convertSec();
-alert(time.toString());
+time.validateTime();
+
+time.print();
+
+time.addHour(1);  
+time.print();
+time.addMin(20); 
+time.print();  
+time.addSec(45);  
+time.print(); 
