@@ -1,0 +1,44 @@
+/* 1 */
+.task1{
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+}
+#number{
+    padding-right: 10px;
+}
+button{
+    display: flex;
+}
+
+/* 2 */
+/* .task2
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 0 auto;
+    border: 1px groove purple;
+    padding: 10px;
+    text-align: center;
+}
+.task2 button{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8em;
+    text-align: center;
+}
+p{
+    text-align: center;
+} */
+
+/* 3 */
+.task3{
+    width: 600px;
+    text-align: justify;
+}
