@@ -1,0 +1,92 @@
+#task4 {
+    display: flex;
+    background: #597BA0;
+    padding: 10px;
+    width: 50%;
+    align-items: center;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    background-color: #597BA0;
+    margin-right: 10px;
+}
+
+.pages div {
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.pages div:hover {
+    background: #446b91;
+}
+
+iframe {
+    width: 100%;
+    background-color: #fff;
+    height: 200px;
+    border: none;
+}
+
+/* 7 */
+table {
+    border: 1px black solid;
+    border-collapse: collapse;
+    font-family: 'Segoe UI';
+}
+
+tr td {
+    border: 1px black solid;
+    padding: 10px 25px;
+}
+
+tr:nth-child(1) {
+    font-weight: bold;
+}
+
+/* 10 */
+#task10 {
+    display: flex;
+    background-color: #597BA0;
+    list-style: none;
+    width: 450px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 15px;
+}
+
+#task10 li {
+    color: #fff;
+    padding: 20px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+#task10 li ul {
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #597BA0;
+}
+
+#task10 li ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#task10 li:hover {
+    background-color: #446b91;
+}
+
+#task10 li ul li:hover {
+    background-color: #446b91;
+}
