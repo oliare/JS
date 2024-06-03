@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPUP</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="click">
+        <button id="btn">Click me</button>
+    </div>
+
+    <div id="modal">
+        <div class="modal-content">
+            <span id="close">✖</span>
+            <h3>questionary</h3><br>
+            <form method=get>
+                <table>
+                    <tr>
+                        <td>First name</td>
+                        <td>
+                            <input style="width: 220px;" type="text" name="name" placeholder="John">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Second name</td>
+                        <td>
+                            <input style="width: 220px;" type="text" name="name" placeholder="Miller">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sex</td>
+                        <td>
+                            <input type="radio" name="gender" value="male" checked> Male
+                            <input style="margin-left: 50px;" type="radio" name="gender" value="female"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>
+                            <input style="width: 40px;" type="text" name="age" min="0" max="120"> y.o.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>
+                            +380 <input style="width: 185px;" type="text" name="phone" max="13">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="email" placeholder="someone@gmail.com" name="email" style="width: 220px;">
+                        </td>
+                    </tr>
+                    <tr class="control">
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Send">
+                            <input style="float: right;" type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
