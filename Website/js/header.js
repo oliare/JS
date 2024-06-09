@@ -1,5 +1,8 @@
-let xhr = new XMLHttpRequest();
-xhr.open("GET", "/_header.html", false)
-xhr.send();
-document.write(xhr.response);
+loadDOM = (page) => {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", `/${page}`, false)
+    xhr.send();
+    document.write(xhr.response);
+}
+
 

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Розетка</title>
+    <title>Rozetka</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet"/>
     <link href="./css/site.css" rel="stylesheet"/>
+    <script src="./js/header.js"></script>
+
 </head>
 
 <body>
-<script src="./js/header.js"></script>
+<script>loadDOM('_header.html');</script>
+
 <div class="container">
-    <h1 class="text-center pad mt-4">Registration</h1>
+    <h1 class="text-center mt-4">Registration</h1>
     <div class="row mt-5">
         <form class="col-md-6 offset-md-3 needs-validation" novalidate>
 
@@ -31,7 +33,7 @@
             <div class="row">
                 <div class="mb-3 col-md-6">
                     <label for="phone" class="form-label">Phone</label>
-                    <input type="text" class="form-control" id="phone" required>
+                    <input type="text" class="form-control" id="phone" required placeholder="+XX(XXX) XXX-XX-XX">
                     <div class="invalid-feedback">Please provide a valid phone number.</div>
                 </div>
                 <div class="mb-3 col-md-6">
@@ -40,7 +42,6 @@
                     <div class="invalid-feedback">Please provide a valid email address.</div>
                 </div>
             </div>
-
 
             <div class="row d-flex align-items-center">
                 <div class="col-md-3">
@@ -68,7 +69,11 @@
         </form>
     </div>
 </div>
-<script src="/js/bootstrap.bundle.min.js"></script>
+
+<script> loadDOM("_messageDialog.html"); </script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="./js/imask.js"></script>
 <script src="/js/forms.js"></script>
 </body>
 
