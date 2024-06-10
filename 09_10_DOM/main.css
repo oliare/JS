@@ -1,44 +1,101 @@
 /* 1 */
-.task1{
+.task1 {
     display: flex;
     font-size: 2em;
     align-items: center;
 }
-#number{
+
+#number {
     padding-right: 10px;
 }
-button{
+
+button {
     display: flex;
 }
 
 /* 2 */
-/* .task2
-{
+.task2 {
+    position: relative;
+    width: 59%;
+    height: 200px;
+    background-color: #dde1ed;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
-    margin: 0 auto;
-    border: 1px groove purple;
-    padding: 10px;
-    text-align: center;
+    overflow: scroll;
 }
-.task2 button{
-    width: 150px;
-    height: 150px;
+
+.block {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.button {
+    position: absolute;
+    left: 30%;
+    bottom: 60%;
+    transform: translateX(-50%);
+    padding: 5px 20px;
+    background-color: #8199b4;
     color: white;
     cursor: pointer;
-    font-size: 0.8em;
-    text-align: center;
+    border: none;
+    border-radius: 5px;
 }
-p{
-    text-align: center;
-} */
+
 
 /* 3 */
-.task3{
-    width: 600px;
+.task3 {
     text-align: justify;
+}
+
+.palette {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.palette div {
+    margin: 2px;
+    display: flex;
+    cursor: pointer;
+}
+
+.task3 p {
+    margin: 50px 70px;
+}
+
+/* task 6 */
+table {
+    border-collapse: collapse;
+    width: 180px;
+    font-size: 20px;
+    border: 3px solid #8199b4;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.digit,
+.operator,
+#clear,
+#result {
+    cursor: pointer;
 }
