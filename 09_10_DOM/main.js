@@ -110,7 +110,6 @@
 
 
 // task 5
-// let countryInput = document.getElementById('countryInput');
 // const countries = [
 //     "Afghanistan", "Albania", "Algeria", "Andorra", "Angola",
 //     "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria",
@@ -140,8 +139,8 @@
 //     "North Korea", "North Macedonia", "Norway", "Oman", "Pakistan",
 //     "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay",
 //     "Peru", "Philippines", "Poland", "Portugal", "Qatar",
-//     "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia",
-//     "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia",
+//     "Romania", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia",
+//     "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Saudi Arabia",
 //     "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore",
 //     "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa",
 //     "South Korea", "South Sudan", "Spain", "Sri Lanka", "Sudan",
@@ -152,11 +151,26 @@
 //     "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City",
 //     "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
 // ];
-// if (countryInput) {
 
-// } else {
+// let countryInput = document.getElementById('countryInput');
+// let tips = document.getElementById('autoTips');
 
-// }
+// countryInput.addEventListener('input', () => {
+//     let input = countryInput.value.toLowerCase();
+//     tips.innerHTML = '';
+//     let matches = countries.filter(country => country.toLowerCase().startsWith(input));
+
+//     matches.forEach(country => {
+//         let hint = document.createElement('div');
+//         hint.classList.add('hint');
+//         hint.textContent = country;
+//         hint.addEventListener('click', () => {
+//             countryInput.value = country;
+//             tips.innerHTML = '';
+//         });
+//         tips.appendChild(hint);
+//     });
+// });
 
 
 // task 6

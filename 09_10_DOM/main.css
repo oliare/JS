@@ -72,6 +72,26 @@ button {
     margin: 50px 70px;
 }
 
+/* task 5 */
+input[id="countryInput"] {
+    width: 300px;
+    padding: 3px;
+    font-size: 16px;
+}
+
+#autoTips {
+    max-height: 150px;
+    width: 300px;
+    overflow-y: auto;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #e5e5e5;
+}
+
+.hint:hover {
+    background-color: #d3d2d2;
+}
+
 /* task 6 */
 table {
     border-collapse: collapse;
