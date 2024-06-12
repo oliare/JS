@@ -41,3 +41,51 @@ let maskOptions = {
     mask: '+00(000) 000-00-00',
 }
 const mask = IMask(phoneInput, maskOptions);
+
+
+// register
+const form = document.getElementById('signupForm');
+
+form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    if (!form.checkValidity()) {
+        event.stopPropagation();
+        form.classList.add('was-validated');
+        return;
+    }
+
+    let email = document.getElementById("email").value;
+    let lastName = document.getElementById("lastName").value;
+    let name = document.getElementById("name").value;
+    let password = document.getElementById("password").value;
+    let phone = document.getElementById('phone').value;
+    let image = document.getElementById('image').files[0];
+
+    if (!image) {
+        alert("Please select a profile picture");
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        const imgUrl = e.target.result;
+        const user = {
+            email,
+            lastName,
+            name,
+            password,
+            phone,
+            image: imgUrl
+        };
+
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+        users.push(user);
+        localStorage.setItem('users', JSON.stringify(users));
+        window.location.href = "signup.html";
+        // alert("Registration successful!");
+    };
+    reader.readAsDataURL(image);
+
+    form.classList.add('was-validated');
+});

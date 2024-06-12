@@ -5,8 +5,7 @@
     <title>Rozetka</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet"/>
     <link href="./css/site.css" rel="stylesheet"/>
-    <script src="./js/header.js"></script>
-
+    <script src="js/header.js"></script>
 </head>
 
 <body>
@@ -15,17 +14,17 @@
 <div class="container">
     <h1 class="text-center mt-4">Registration</h1>
     <div class="row mt-5">
-        <form class="col-md-6 offset-md-3 needs-validation" novalidate>
+        <form id="signupForm" class="col-md-6 offset-md-3 needs-validation" novalidate>
 
             <div class="row">
                 <div class="mb-3 col-md-6">
                     <label for="lastName" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="lastName" required>
+                    <input type="text" class="form-control" id="lastName" pattern="^[a-zA-Z]+$|^[\u0400-\u04FF]+$" required>
                     <div class="valid-feedback">Looks good!</div>
                 </div>
                 <div class="mb-3 col-md-6">
                     <label for="name" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="name" required>
+                    <input type="text" class="form-control" id="name" pattern="^[a-zA-Z]+$|^[\u0400-\u04FF]+$" required>
                     <div class="valid-feedback">Looks good!</div>
                 </div>
             </div>
@@ -33,7 +32,7 @@
             <div class="row">
                 <div class="mb-3 col-md-6">
                     <label for="phone" class="form-label">Phone</label>
-                    <input type="text" class="form-control" id="phone" required placeholder="+XX(XXX) XXX-XX-XX">
+                    <input type="text" class="form-control" id="phone" required pattern="^\+\d{2}\(\d{3}\) \d{3}-\d{2}-\d{2}$" placeholder="+XX(XXX) XXX-XX-XX">
                     <div class="invalid-feedback">Please provide a valid phone number.</div>
                 </div>
                 <div class="mb-3 col-md-6">
@@ -56,8 +55,8 @@
             </div>
 
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
                 <div class="invalid-feedback">Please provide a valid password.</div>
             </div>
 
@@ -73,8 +72,8 @@
 <script> loadDOM("_messageDialog.html"); </script>
 
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="./js/imask.js"></script>
-<script src="/js/forms.js"></script>
+<script src="js/imask.js"></script>
+<script src="js/forms.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Rozetka</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./css/site.css" rel="stylesheet"/>
+    <script src="./js/header.js"></script>
+</head>
+
+<body>
+<script>loadDOM('_header.html');</script>
+
+<div class="container">
+    <h1 class="text-center mt-4">Login</h1>
+    <div class="row mt-5">
+        <form id="loginForm" class="col-md-6 offset-md-3 needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="invalid-feedback">Please provide a valid password.</div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-success me-4">Login</button>
+                <button type="reset" class="btn btn-primary">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
