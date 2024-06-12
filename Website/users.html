@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/site.css">
+    <script src="js/header.js"></script>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 5px;
+        text-align: left;
+        border: 1px solid #a7a3a3;
+        text-align: center;
+    }
+    th {
+        background-color: #f0f0f0;
+    }
+    button {
+        padding: 5px 10px;
+        background-color: #eddacb;
+        color: red;
+        border: 1px solid rgb(227, 207, 207);
+        border-radius: 100px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <script>loadDOM('_header.html');</script>
+    <div class="text-center m-5">
+
+        <h1 class="mt-4">Registered Users</h1>
+        <table id="users" class="mt-5">
+            <thead>
+                <tr>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/users.js"></script>
+</body>
+
+</html>
