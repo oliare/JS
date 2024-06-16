@@ -1,14 +1,39 @@
 body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: rgb(var(--bs-tertiary-color-rgb));
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
 }
-span {
-    font-style: italic;
-    font-weight: normal;
-    margin-left: 10px;
-  }
 
-  .card-body li {
-    font-weight: bold;
-  }
+span {
+  font-style: italic;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.card-body li {
+  font-weight: bold;
+}
+
+/*  */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid #a7a3a3;
+  text-align: justify;
+  font-size: 14px;
+}
+
+thead tr th {
+  text-align: center;
+  font-size: 16px;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+

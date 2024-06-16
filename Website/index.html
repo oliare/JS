@@ -9,17 +9,29 @@
     <link rel="stylesheet" href="./css/site.css">
     <script src="js/header.js"></script>
 </head>
-
 <body>
     <script>loadDOM('_header.html');</script>
-    <div class="text-center">
+    <div class="text-center mx-3">
         <h1 class="mt-4">Registration</h1>
-        <input class="btn btn-success" id="add" type="button" value="Add image" />
-        <input id="image_url" type="text" />
-
-        <div id="img">
-        </div>
+        <input class="btn btn-success mt-4" id="getUsers" type="button" value="Get users">
+        <table id="jsonUsers" class="mt-4">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Geo</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                    <th>Company</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
     </div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
