@@ -11,10 +11,15 @@ axios.get(url)
             let img = c.imagePath ? `${server}images/320_${c.imagePath}` : defaultImage;
             let row = `
                     <tr>
-                        <th scope="row">${c.id}</th>
+                        <th class="text-center" scope="row">${c.id}</th>
                         <td>${c.name}</td>
                         <td>${c.description}</td>
-                        <td><img src="${img}" width="75"/></td>
+                        <td class="text-center"><img src="${img}" width="80"/></td>
+                        <td class="text-center">
+                            <a href="/edit_category.html?id=${c.id}">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                        </td>
                     </tr>
                 `;
             tbody.innerHTML += row;
