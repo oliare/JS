@@ -20,6 +20,12 @@ axios.get(url)
                                 <i class="bi bi-pencil"></i>
                             </a>
                         </td>
+                         <td class="text-center">
+                            <a href="#" onclick="confirmDelete(${c.id})">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+
                     </tr>
                 `;
             tbody.innerHTML += row;
